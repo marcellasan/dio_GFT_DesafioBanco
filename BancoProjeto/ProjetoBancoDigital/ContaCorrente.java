@@ -8,7 +8,7 @@ public class ContaCorrente extends Conta {
 	}
 
 	public void imprimirExtrato() {
-		System.out.println("____EXTRATO (CONTA CORRENTE)_____");
+		System.out.println("__\tEXTRATO (CONTA CORRENTE)\t__");
 		this.imprimirStatusConta();
 		
 	}

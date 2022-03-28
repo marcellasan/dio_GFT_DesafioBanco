@@ -59,10 +59,10 @@ public abstract  class Conta extends Cliente {
 		if (this.getStatus()) {
 			if (this.getSaldo() >= valor) {
 				this.setSaldo(this.getSaldo() - valor);
-				System.out.println("================  SAQUE  ===================");
+				System.out.println("====\tSAQUE\t=====");
 				System.out.println("Realizado na Conta de " + this.cliente.getNome());
 				System.out.printf("no valor de R$ %.2f", valor);
-				System.out.println("\n============================================");
+				System.out.println("\n");
 				System.out.println();
 			} else {
 				System.out.println("SALDO INSUFICIENTE!!!");
@@ -76,10 +76,10 @@ public abstract  class Conta extends Cliente {
 	public void depositar(double valor) {
 		if (this.getStatus()) {
 			this.setSaldo(this.getSaldo() + valor);
-			System.out.println("===============  DEPÓSITO ==================");
+			System.out.println("====\tDEPÓSITO\t====");
 			System.out.println("Realizado na conta de " + this.cliente.getNome());
 			System.out.printf("no valor de R$ %.2f ",  valor);
-			System.out.println("\n============================================");
+			System.out.println("\n");
 			System.out.println();
 		} else {
 			System.out.println("IMPOSSÍVEL DEPOSITAR!!!");
@@ -92,7 +92,7 @@ public abstract  class Conta extends Cliente {
 		if (this.getStatus()) {
 			
 			
-			System.out.println("----- TRASNFERÊNCIA REALIZADA ---- ");
+			System.out.println("---- \tTRASNFERÊNCIA REALIZADA\t ---- ");
 			System.out.println("Conta Origem: " + this.cliente.getNome());
 			System.out.printf("Valor da Transação R$ %.2f", valor);
 			System.out.println("\nConta Destino " + contaDestino.cliente.getNome());
@@ -117,7 +117,6 @@ public abstract  class Conta extends Cliente {
 		System.out.println("Cliente: " + this.cliente.getNome());
 		System.out.printf("Saldo: : R$ %.2f " , this.getSaldo());
 		System.out.println("\nConta Ativa: " + this.getStatus());
-		System.out.println("__________________________________");
 		System.out.println();
 	}
 	
@@ -128,7 +127,7 @@ public abstract  class Conta extends Cliente {
 
 	public void fichaClientes() {
 	
-	System.out.println("FICHA CADASTRAL DE CLIENTE_______________________________");
+	System.out.println("________\tFICHA CADASTRAL DE CLIENTE\t________");
 	System.out.println("Num. Conta: 0000" + this.getNumConta() + "-"+ tipoConta +"  Agência: 000" + this.getAgencia() + "   Tipo: " + this.getTipo());
 	System.out.println("Titular: " + this.cliente.getNome());
 	System.out.println("Endereço: " + this.cliente.getEndereco());

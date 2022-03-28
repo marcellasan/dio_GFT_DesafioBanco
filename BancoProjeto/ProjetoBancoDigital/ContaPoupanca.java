@@ -8,7 +8,7 @@ public class ContaPoupanca extends Conta {
 	}
 
 	public void imprimirExtrato() {
-		System.out.println("____EXTRATO (CONTA POUPANÇA)_____");
+		System.out.println("___\tEXTRATO (CONTA POUPANÇA)\t___");
 		this.imprimirStatusConta();
 	}
 }
